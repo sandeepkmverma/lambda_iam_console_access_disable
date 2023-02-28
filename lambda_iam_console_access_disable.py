@@ -76,12 +76,13 @@ def lambda_handler(event, context):
     ################################# Variable Stack Ends Here #################################
 
 
+    # If you are not able to enable the Console Access of the IAM User through AWS IAM Console, then Comment-Out all the Code except the Below Line and run the Lambda Function in order to enable the specified IAM User.
+    # create_iam_login_profile = iam.create_login_profile(UserName='UserName',Password='NewPassword',PasswordResetRequired=True)
+    
 
     ################################# Code Starts Here #################################
     iam = boto3.client('iam')
     ses = boto3.client('ses',region_name=ses_region_name)
-
-    # create_iam_login_profile = iam.create_login_profile(UserName='umanath_test',Password='NewPassword',PasswordResetRequired=True)
 
     user_list = iam.list_users()['Users']
 
