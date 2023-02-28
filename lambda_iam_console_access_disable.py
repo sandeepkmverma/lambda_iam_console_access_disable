@@ -67,14 +67,12 @@ from datetime import datetime, timedelta
 def lambda_handler(event, context):
 
     ################################# Variable Stack Starts Here #################################
-    account_name = "TataPlay OTT"
+    account_name = "AWS Account Name"
     ses_region_name='us-east-1'
-    max_days_since_pw_used = 10
-    warning_days = 5
-    ses_source_email_address = "umanath.pathak@tothenew.com"
-    # cc_email_list = ['umanath.pathak@tothenew.com', 'sarthi.sukhija@tothenew.com', 'farhaz.khan@tothenew.com', 'tataplaydevops@tothenew.com', 'tataplay.ottsupport@tothenew.com']
-    cc_email_list = ['sandeep.km.59@gmail.com']
-
+    max_days_since_pw_used = 45
+    warning_days = 38
+    ses_source_email_address = "sandeep.km.59@gmail.com"
+    cc_email_list = ['umanath.pathak@yahoo.com', 'urpathak14@gmail.com']
     ################################# Variable Stack Ends Here #################################
 
 
