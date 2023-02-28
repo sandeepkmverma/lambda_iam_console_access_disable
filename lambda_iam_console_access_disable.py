@@ -16,7 +16,7 @@
 #     ]
 # }
 
-#2. UmanathListingAndDeletingIAMUsers
+#2. LambdaListingAndDeletingIAMUsers
 # {
 #     "Version": "2012-10-17",
 #     "Statement": [
@@ -34,7 +34,7 @@
 #     ]
 # }
 
-#3. UmanathSESSendingEmailLambda
+#3. LambdaSESSendingEmailLambda
 # {
 #     "Version": "2012-10-17",
 #     "Statement": [
